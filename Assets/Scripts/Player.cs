@@ -37,7 +37,8 @@ public class Player : MonoBehaviour
         {
             _renderer.flipX = true;
         }
-        animator.SetFloat("Speed", Mathf.Abs(movimentoX));
+        animator.SetFloat("SpeedX", Mathf.Abs(movimentoX));
+        animator.SetFloat("SpeedY", Mathf.Abs(movimentoY));
         rigidBody.velocity = new Vector2(movimentoX, movimentoY);
 
         
